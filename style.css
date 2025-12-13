@@ -1,1 +1,185 @@
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    background:#F6F4EF;
+    color:#3a3a3a;
+    line-height:1.8;
+}
+
+/* ===== TIPOGRAFÍA ===== */
+h1, h2, h3{
+    font-family: 'Merriweather', serif;
+    color:#823D32;
+}
+
+h2{
+    margin-bottom:1rem;
+}
+
+p{
+    margin-bottom:1.2rem;
+}
+
+/* ===== CONTENEDOR GENERAL ===== */
+.container{
+    max-width:900px;
+    margin:auto;
+    padding:4rem 2rem;
+}
+
+/* ===== HERO ===== */
+.hero{
+    background:#E3CFB4;
+    padding:3rem 2rem;
+    border-radius:20px;
+    margin-bottom:4rem;
+}
+
+.hero h1{
+    font-size:2.2rem;
+    margin-bottom:1rem;
+}
+
+.hero p{
+    font-size:1.05rem;
+    max-width:700px;
+}
+
+/* ===== IMAGEN INTRO ===== */
+.hero-image{
+    margin-top:2rem;
+    border-radius:16px;
+    overflow:hidden;
+}
+
+.hero-image img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+/* ===== SECCIONES ===== */
+.section{
+    margin-bottom:4rem;
+    position:relative;
+    padding-left:1.5rem;
+}
+
+/* Línea decorativa lateral */
+.section::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:4px;
+    height:100%;
+    background:#839958;
+    border-radius:5px;
+}
+
+/* ===== BLOQUE DESTACADO ===== */
+.highlight{
+    background:#ffffff;
+    border-left:6px solid #FDC441;
+    padding:2rem;
+    border-radius:16px;
+    margin:3rem 0;
+    box-shadow:0 15px 30px rgba(0,0,0,0.05);
+}
+
+/* ===== IMAGEN + TEXTO ===== */
+.media-block{
+    display:grid;
+    grid-template-columns:1fr 1.2fr;
+    gap:2rem;
+    align-items:center;
+    margin:4rem 0;
+}
+
+.media-block img{
+    width:100%;
+    border-radius:18px;
+    height:260px;
+    object-fit:cover;
+}
+
+/* ===== CITA VISUAL ===== */
+.quote{
+    background:#823D32;
+    color:#fff;
+    padding:2.5rem;
+    border-radius:20px;
+    font-style:italic;
+    margin:4rem 0;
+}
+
+.quote span{
+    display:block;
+    margin-top:1rem;
+    font-size:0.9rem;
+    opacity:0.85;
+}
+
+/* ===== SECCIÓN REFLEXIVA ===== */
+.reflection{
+    background:#fff;
+    padding:3rem;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.06);
+}
+
+.reflection ul{
+    margin-top:1.5rem;
+    padding-left:1.5rem;
+}
+
+.reflection li{
+    margin-bottom:0.8rem;
+}
+
+/* ===== BIBLIOGRAFÍA ===== */
+.bibliography{
+    background:#EFE8DD;
+    padding:3rem;
+    border-radius:20px;
+    margin-top:5rem;
+}
+
+.bibliography h2{
+    margin-bottom:1.5rem;
+}
+
+.bibliography p{
+    font-size:0.95rem;
+}
+
+/* ===== FOOTER ===== */
+.footer{
+    text-align:center;
+    padding:3rem 2rem;
+    font-size:0.9rem;
+    color:#666;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+
+    .media-block{
+        grid-template-columns:1fr;
+    }
+
+    .hero-image img{
+        height:220px;
+    }
+
+    .container{
+        padding:3rem 1.5rem;
+    }
+}
 
