@@ -6,7 +6,11 @@
     --fondo:#fffaf3;
 }
 
-*{margin:0;padding:0;box-sizing:border-box;}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
 body{
     font-family:'Segoe UI',sans-serif;
@@ -15,7 +19,7 @@ body{
     line-height:1.7;
 }
 
-/* NAVBAR */
+/* NAVBAR FIJA */
 .navbar{
     position:fixed;
     top:0;
@@ -28,12 +32,14 @@ body{
     z-index:1000;
 }
 
-.navbar h2{color:#fff;}
+.navbar h2{
+    color:#fff;
+}
 
 .navbar ul{
     list-style:none;
     display:flex;
-    gap:20px;
+    gap:18px;
 }
 
 .navbar a{
@@ -42,12 +48,16 @@ body{
     font-size:0.95rem;
 }
 
-header{
+/* HERO */
+.hero{
     margin-top:80px;
+    background:linear-gradient(90deg,var(--amarillo),var(--naranja));
+    color:#fff;
     padding:60px 20px;
     text-align:center;
 }
 
+/* CONTENIDO */
 main{
     max-width:1000px;
     margin:40px auto;
@@ -61,9 +71,14 @@ article{
     box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
-h2,h3{color:var(--marron);}
+h3{
+    color:var(--marron);
+}
 
-p{margin:15px 0;text-align:justify;}
+p{
+    margin:15px 0;
+    text-align:justify;
+}
 
 .imagen img{
     width:100%;
@@ -80,15 +95,11 @@ p{margin:15px 0;text-align:justify;}
     border-radius:10px;
 }
 
-/* REFLEXION MEJORADA */
+/* REFLEXION */
 .reflexion{
-    background:#f7f1e8;
+    background:#f6efe6;
     padding:30px;
     border-radius:14px;
-}
-
-.reflexion ul{
-    margin:15px 0 20px 20px;
 }
 
 /* COMENTARIOS */
@@ -96,6 +107,7 @@ p{margin:15px 0;text-align:justify;}
     background:#fff;
     padding:20px;
     border-radius:12px;
+    margin-top:20px;
 }
 
 .comentarios input,
@@ -116,6 +128,11 @@ p{margin:15px 0;text-align:justify;}
     cursor:pointer;
 }
 
+/* BIBLIOGRAFIA */
+.bibliografia ul{
+    margin-left:20px;
+}
+
 footer{
     background:var(--marron);
     color:#fff;
@@ -125,5 +142,7 @@ footer{
 }
 
 @media(max-width:768px){
-    .navbar ul{display:none;}
+    .navbar ul{
+        display:none;
+    }
 }
