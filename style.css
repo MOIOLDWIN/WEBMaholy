@@ -44,8 +44,6 @@ body{
 
 header{
     margin-top:80px;
-    background:linear-gradient(90deg,var(--amarillo),var(--naranja));
-    color:#fff;
     padding:60px 20px;
     text-align:center;
 }
